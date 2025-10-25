@@ -1,0 +1,137 @@
+{
+	"GeneralInfo": {
+		"ApiKey": "TGXZXSYYYY==",
+		"CustomerCode": null,
+		"SessionId": "d07b458ca1cf4c5bb5358e3b31fabe4d",
+		"TimeStamp": "2024-12-09T12:02:16Z"
+	},
+	"ErrorInfo": null,
+	"HotelCode": "548119",
+	"ShortCode": "ArabianOryx",
+	"GroupCode": 175,
+	"SupplierGroupCode": 135,
+	"CurrencyCode": "AED",
+	"PriceBreakdown": [
+		{
+			"RoomIdentifier": 1,
+			"RateKey": "390869520PT",
+			"GrossAmount": 383.91,
+			"Tax": 43.47,
+			"Discount": 0.0,
+			"NetAmount": 427.38,
+			"SupplierGrossAmount": 105.19,
+			"SupplierTax": 11.91,
+			"SupplierDiscount": 0.0,
+			"SupplierNetAmount": 117.1,
+			"RoomName": "Deluxe Triple Room",
+			"RateType": null,
+			"DateRange": [
+				{
+					"FromDate": "2025-04-15T00:00:00",
+					"ToDate": "2025-04-15T00:00:00",
+					"Text": "142.46",
+					"SupplierText": "39.04"
+				},
+				{
+					"FromDate": "2025-04-16T00:00:00",
+					"ToDate": "2025-04-16T00:00:00",
+					"Text": "142.46",
+					"SupplierText": "39.04"
+				},
+				{
+					"FromDate": "2025-04-17T00:00:00",
+					"ToDate": "2025-04-17T00:00:00",
+					"Text": "142.46",
+					"SupplierText": "39.04"
+				}
+			],
+			"Extrabed": 0.0,
+			"OtherCharges": 0.0,
+			"ServiceCharge": 0.0,
+			"ExtraGuestCharges": 0.0,
+			"Commission": {
+				"Unit": "1",
+				"Text": "35.22",
+				"SupplierText": "9.65",
+				"AppliedOn": ""
+			},
+			"OtherFee": [
+				{
+					"FeeText": "mandatory_fee",
+					"FeeValue": "AED 93.75"
+				},
+				{
+					"FeeText": "mandatory_tax",
+					"FeeValue": "AED 56.25"
+				}
+			],
+			"TaxType": "tax_and_service_fee",
+			"SupplierCurrency": "USD",
+			"SupplierExtrabed": 0.0,
+			"SupplierOtherCharges": 0.0,
+			"SupplierServiceCharge": 0.0,
+			"SupplierExtraGuestCharges": 0.0
+		},
+		{
+			"RoomIdentifier": 2,
+			"RateKey": "390869520PT",
+			"GrossAmount": 383.91,
+			"Tax": 43.47,
+			"Discount": 0.0,
+			"NetAmount": 427.38,
+			"SupplierGrossAmount": 105.19,
+			"SupplierTax": 11.91,
+			"SupplierDiscount": 0.0,
+			"SupplierNetAmount": 117.1,
+			"RoomName": "Deluxe Triple Room",
+			"RateType": null,
+			"DateRange": [
+				{
+					"FromDate": "2025-04-15T00:00:00",
+					"ToDate": "2025-04-15T00:00:00",
+					"Text": "142.46",
+					"SupplierText": "39.04"
+				},
+				{
+					"FromDate": "2025-04-16T00:00:00",
+					"ToDate": "2025-04-16T00:00:00",
+					"Text": "142.46",
+					"SupplierText": "39.04"
+				},
+				{
+					"FromDate": "2025-04-17T00:00:00",
+					"ToDate": "2025-04-17T00:00:00",
+					"Text": "142.46",
+					"SupplierText": "39.04"
+				}
+			],
+			"Extrabed": 0.0,
+			"OtherCharges": 0.0,
+			"ServiceCharge": 0.0,
+			"ExtraGuestCharges": 0.0,
+			"Commission": {
+				"Unit": "1",
+				"Text": "35.22",
+				"SupplierText": "9.65",
+				"AppliedOn": ""
+			},
+			"OtherFee": [
+				{
+					"FeeText": "mandatory_fee",
+					"FeeValue": "AED 93.75"
+				},
+				{
+					"FeeText": "mandatory_tax",
+					"FeeValue": "AED 56.25"
+				}
+			],
+			"TaxType": "tax_and_service_fee",
+			"SupplierCurrency": "USD",
+			"SupplierExtrabed": 0.0,
+			"SupplierOtherCharges": 0.0,
+			"SupplierServiceCharge": 0.0,
+			"SupplierExtraGuestCharges": 0.0
+		}
+	],
+	"TextRemark": null
+}

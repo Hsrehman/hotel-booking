@@ -1,0 +1,218 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+enum OverrideType {
+  PERCENTAGE
+  FIXED
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  FAILED
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  firstName    String?
+  lastName     String?
+  phone        String?
+  role         UserRole @default(USER)
+  emailVerified Boolean @default(false)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // Relations
+  bookings     Booking[]
+  sessions     Session[]
+
+  @@map("users")
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  userId    String?
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  // Relations
+  user      User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}
+
+model Destination {
+  id            String   @id @default(cuid())
+  destinationId String   @unique // TassPro destination ID
+  cityName      String
+  countryName   String
+  countryCode   String
+  searchCount   Int      @default(0)
+  lastUsed      DateTime @default(now())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // Relations
+  hotels        Hotel[]
+
+  @@map("destinations")
+}
+
+model Hotel {
+  id           String   @id @default(cuid())
+  hotelCode    String   @unique // TassPro hotel code
+  name         String
+  description  String?
+  starRating   String?
+  address      String?
+  lat          String?
+  lon          String?
+  imageUrl     String?
+  images       String[] // Array of image URLs
+  amenities    String[] // Array of amenities
+  destinationId String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // Relations
+  destination  Destination? @relation(fields: [destinationId], references: [id])
+  priceOverrides PriceOverride[]
+
+  @@map("hotels")
+}
+
+model PriceOverride {
+  id          String       @id @default(cuid())
+  hotelCode   String
+  overrideType OverrideType
+  value       Float
+  currency    String?
+  isActive    Boolean      @default(true)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  // Relations
+  hotel       Hotel        @relation(fields: [hotelCode], references: [hotelCode])
+
+  @@map("price_overrides")
+}
+
+model GlobalMarkup {
+  id         String   @id @default(cuid())
+  percentage Float
+  isActive   Boolean  @default(true)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@map("global_markups")
+}
+
+model Booking {
+  id                     String        @id @default(cuid())
+  userId                 String?
+  guestEmail             String?
+  sessionId              String        // TassPro session ID
+  adsConfirmationNumber  String?
+  hotelConfirmationNumber String?
+  supplierConfirmationNumber String?
+  status                 BookingStatus @default(PENDING)
+  checkIn                DateTime
+  checkOut               DateTime
+  totalPrice             Float
+  currency               String
+  destinationCode        String
+  hotelCode              String
+  countryCode            String
+  nationality            String
+  customerRefNumber      String
+  specialRequests        String?
+  createdAt              DateTime     @default(now())
+  updatedAt              DateTime     @updatedAt
+
+  // Relations
+  user                   User?        @relation(fields: [userId], references: [id])
+  rooms                  BookingRoom[]
+  payments               Payment[]
+
+  @@map("bookings")
+}
+
+model BookingRoom {
+  id           String   @id @default(cuid())
+  bookingId    String
+  roomIdentifier Int
+  rateKey      String
+  roomName     String?
+  meal         String?
+  rateType     String?
+  price        Float
+  adults       Int
+  children     Json?    // Store children data as JSON
+  guests       Json?    // Store guest details as JSON
+  createdAt    DateTime @default(now())
+
+  // Relations
+  booking      Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+
+  @@map("booking_rooms")
+}
+
+model Payment {
+  id                    String   @id @default(cuid())
+  bookingId             String
+  stripePaymentIntentId String?
+  amount                Float
+  currency              String
+  status                String   // succeeded, failed, refunded
+  refundAmount          Float?
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+
+  // Relations
+  booking               Booking  @relation(fields: [bookingId], references: [id])
+
+  @@map("payments")
+}
+
+model SearchLog {
+  id             String   @id @default(cuid())
+  destinationCode String
+  checkIn        DateTime
+  checkOut       DateTime
+  rooms          Json     // Store room configuration as JSON
+  resultCount    Int?
+  timestamp      DateTime @default(now())
+
+  @@map("search_logs")
+}
+
+model ApiLog {
+  id           String   @id @default(cuid())
+  endpoint     String
+  method       String
+  requestBody  Json?
+  responseBody Json?
+  statusCode   Int
+  responseTime Int      // in milliseconds
+  timestamp    DateTime @default(now())
+
+  @@map("api_logs")
+}

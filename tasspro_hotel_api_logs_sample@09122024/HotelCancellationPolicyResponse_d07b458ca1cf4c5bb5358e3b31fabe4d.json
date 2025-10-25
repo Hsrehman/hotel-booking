@@ -1,0 +1,138 @@
+{
+	"GeneralInfo": {
+		"ApiKey": "TGXZXSYYYY==",
+		"CustomerCode": null,
+		"SessionId": "d07b458ca1cf4c5bb5358e3b31fabe4d",
+		"TimeStamp": "2024-12-09T12:02:25Z"
+	},
+	"ErrorInfo": null,
+	"Monetary": {
+		"Currency": {
+			"Code": "AED",
+			"ExchangeRate": 0.274,
+			"Text": "AED"
+		}
+	},
+	"Rooms": {
+		"Room": [
+			{
+				"Adult": 0,
+				"Children": null,
+				"RoomName": "Deluxe Triple Room",
+				"Meal": null,
+				"RateType": "Refundable",
+				"RateKey": "390869520PT",
+				"Status": null,
+				"BedTypes": null,
+				"RoomIndex": 0,
+				"RoomIdentifier": 1,
+				"GroupCode": 175,
+				"SupplierGroupCode": 135,
+				"ShortCode": "ArabianOryx",
+				"ContractType": "T",
+				"IsCache": false,
+				"MinStay": 2,
+				"Policies": {
+					"Policy": [
+						{
+							"Condition": [
+								{
+									"FromDate": "2025-04-14T00:00:00",
+									"ToDate": "2025-04-15T00:00:00",
+									"Time": null,
+									"Timezone": "+04:00",
+									"Unit": 1,
+									"Text": "",
+									"FromTime": "00:00",
+									"ToTime": "23:59",
+									"Percentage": "0",
+									"Nights": "1",
+									"Fixed": "0",
+									"SupplierFixed": "",
+									"ApplicableOn": "AverageNights"
+								}
+							],
+							"TextCondition": "Applicable Timezone (+04:00)",
+							"Type": "CAN",
+							"Currency": "AED",
+							"SupplierCurrency": "USD"
+						}
+					]
+				},
+				"MarriageIdentifier": 1353,
+				"RoomCombinationId": 1353,
+				"IsPriceBreakupAvailable": false,
+				"IsCancelationPolicyAvailble": true,
+				"Remarks": {
+					"Remark": [
+						{
+							"Type": "Note",
+							"Text": "The charges and fees are based on destination currency."
+						}
+					]
+				},
+				"ExtraBedCount": 0,
+				"Inclusions": null
+			},
+			{
+				"Adult": 0,
+				"Children": null,
+				"RoomName": "Deluxe Triple Room",
+				"Meal": null,
+				"RateType": "Refundable",
+				"RateKey": "390869520PT",
+				"Status": null,
+				"BedTypes": null,
+				"RoomIndex": 0,
+				"RoomIdentifier": 2,
+				"GroupCode": 175,
+				"SupplierGroupCode": 135,
+				"ShortCode": "ArabianOryx",
+				"ContractType": "T",
+				"IsCache": false,
+				"MinStay": 2,
+				"Policies": {
+					"Policy": [
+						{
+							"Condition": [
+								{
+									"FromDate": "2025-04-14T00:00:00",
+									"ToDate": "2025-04-15T00:00:00",
+									"Time": null,
+									"Timezone": "+04:00",
+									"Unit": 1,
+									"Text": "",
+									"FromTime": "00:00",
+									"ToTime": "23:59",
+									"Percentage": "0",
+									"Nights": "1",
+									"Fixed": "0",
+									"SupplierFixed": "",
+									"ApplicableOn": "AverageNights"
+								}
+							],
+							"TextCondition": "Applicable Timezone (+04:00)",
+							"Type": "CAN",
+							"Currency": "AED",
+							"SupplierCurrency": "USD"
+						}
+					]
+				},
+				"MarriageIdentifier": 1353,
+				"RoomCombinationId": 1353,
+				"IsPriceBreakupAvailable": false,
+				"IsCancelationPolicyAvailble": true,
+				"Remarks": {
+					"Remark": [
+						{
+							"Type": "Note",
+							"Text": "The charges and fees are based on destination currency."
+						}
+					]
+				},
+				"ExtraBedCount": 0,
+				"Inclusions": null
+			}
+		]
+	}
+}

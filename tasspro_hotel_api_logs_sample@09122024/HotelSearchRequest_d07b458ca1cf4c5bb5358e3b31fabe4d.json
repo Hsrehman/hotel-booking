@@ -1,0 +1,39 @@
+{
+	"SearchParameter": {
+		"DestinationCode": "160-0",
+		"CountryCode": "AE",
+		"Nationality": "AE",
+		"Currency": "AED",
+		"CheckInDate": "2025-04-15T00:00:00",
+		"CheckOutDate": "2025-04-18T00:00:00",
+		"Rooms": {
+			"Room": [
+				{
+					"RoomIdentifier": 1,
+					"Adult": 1
+				},
+				{
+					"RoomIdentifier": 2,
+					"Adult": 1,
+					"Children": {
+						"Count": 2,
+						"ChildAge": [
+							{
+								"Identifier": 1,
+								"Text": "5"
+							},
+							{
+								"Identifier": 2,
+								"Text": "8"
+							}
+						]
+					}
+				}
+			]
+		},
+		"TassProInfo": {
+			"CustomerCode": "4805",
+			"RegionID": "123"
+		}
+	}
+}

@@ -1,0 +1,207 @@
+{
+	"generalInfo": {
+		"ApiKey": "TGXZXSYYYY==",
+		"SessionId": "d07b458ca1cf4c5bb5358e3b31fabe4d",
+		"TimeStamp": "2024-12-09T12:03:39Z"
+	},
+	"GenericBookingInfo": {
+		"SessionId": "d07b458ca1cf4c5bb5358e3b31fabe4d",
+		"CustomerCode": "CUS0000153",
+		"CustomerRefNumber": "TSSPRO-1240156",
+		"ADSConfirmationNumber": "46F0D8CFE",
+		"SupplierConfirmationNumber": "9009659464384",
+		"Status": "2",
+		"isOpaque": false,
+		"HotelBookingRequest": {
+			"SessionId": "d07b458ca1cf4c5bb5358e3b31fabe4d",
+			"HotelCode": "548119",
+			"DestinationCode": "160-0",
+			"CountryCode": "AE",
+			"Currency": "AED",
+			"Nationality": "AE",
+			"CustomerRefNumber": "TSSPRO-1240156",
+			"GroupCode": 175,
+			"Rooms": {
+				"Room": [
+					{
+						"RoomIdentifier": 1,
+						"Adult": 1,
+						"Children": null,
+						"RateKey": "390869520PT",
+						"Guests": {
+							"Guest": [
+								{
+									"Title": {
+										"Code": "",
+										"Text": "Mr"
+									},
+									"FirstName": "Asad",
+									"LastName": "Siddiqui",
+									"IsLeadPAX": true,
+									"Type": "Adult",
+									"Age": 35
+								}
+							]
+						},
+						"Price": {
+							"Gross": 396.11,
+							"Net": 396.11,
+							"Tax": 0.0
+						}
+					},
+					{
+						"RoomIdentifier": 2,
+						"Adult": 1,
+						"Children": {
+							"Count": 2,
+							"ChildAge": [
+								{
+									"Identifier": 1,
+									"Text": "5"
+								},
+								{
+									"Identifier": 2,
+									"Text": "8"
+								}
+							]
+						},
+						"RateKey": "390869520PT",
+						"Guests": {
+							"Guest": [
+								{
+									"Title": {
+										"Code": "",
+										"Text": "Mr"
+									},
+									"FirstName": "Sharique",
+									"LastName": "Salim",
+									"IsLeadPAX": false,
+									"Type": "Adult",
+									"Age": 35
+								},
+								{
+									"Title": {
+										"Code": "",
+										"Text": "Master"
+									},
+									"FirstName": "Zaid",
+									"LastName": "Salim",
+									"IsLeadPAX": false,
+									"Type": "Child",
+									"Age": 5
+								},
+								{
+									"Title": {
+										"Code": "",
+										"Text": "Master"
+									},
+									"FirstName": "Farhan",
+									"LastName": "Ismail",
+									"IsLeadPAX": false,
+									"Type": "Child",
+									"Age": 8
+								}
+							]
+						},
+						"Price": {
+							"Gross": 396.11,
+							"Net": 396.11,
+							"Tax": 0.0
+						}
+					}
+				]
+			}
+		},
+		"HotelBookingResponse": {
+			"HotelCode": "548119",
+			"SupplierHotelCode": "94688854",
+			"DestinationCode": "160-0",
+			"CountryCode": "AE",
+			"Currency": "AED",
+			"Nationality": "AE",
+			"CustomerRefNumber": "TSSPRO-1240156",
+			"GroupCode": 175,
+			"SupplierGroupCode": 135,
+			"BookingCreation": "2024-12-09T08:03:19.846Z",
+			"HotelConfirmationNumber": "501654455",
+			"ADSConfirmationNumber": "46F0D8CFE",
+			"SupplierConfirmationNumber": "9009659464384",
+			"Status": "2",
+			"Rooms": [
+				{
+					"HotelConfirmationNumber": "374662745",
+					"Adult": 1,
+					"Children": null,
+					"RoomName": null,
+					"Meal": null,
+					"RateType": null,
+					"RateKey": null,
+					"Status": "Confirmed",
+					"BedTypes": null,
+					"RoomIndex": 1,
+					"RoomIdentifier": 1,
+					"GroupCode": 0,
+					"SupplierGroupCode": 0,
+					"ShortCode": "ArabianOryx",
+					"ContractType": null,
+					"IsCache": false,
+					"MinStay": null,
+					"Policies": null,
+					"Guests": null,
+					"Price": null,
+					"MarriageIdentifier": 0,
+					"Reprice": null,
+					"IsPriceBreakupAvailable": false,
+					"IsCancelationPolicyAvailble": false,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"ADSConfirmationNumber": null,
+					"HotelConfirmationNumber": "374662748",
+					"SupplierConfirmationNumber": null,
+					"RoomConfirmationNumber": "374662748",
+					"Adult": 1,
+					"Children": {
+						"ChildAge": [
+							{
+								"Identifier": 1,
+								"Text": "5"
+							},
+							{
+								"Identifier": 2,
+								"Text": "8"
+							}
+						],
+						"Count": 2
+					},
+					"RoomName": null,
+					"Meal": null,
+					"RateType": null,
+					"RateKey": null,
+					"Status": "Confirmed",
+					"BedTypes": null,
+					"RoomIndex": 2,
+					"RoomIdentifier": 2,
+					"GroupCode": 0,
+					"SupplierGroupCode": 0,
+					"ShortCode": "ArabianOryx",
+					"ContractType": null,
+					"IsCache": false,
+					"MinStay": null,
+					"Policies": null,
+					"Guests": null,
+					"Price": null,
+					"MarriageIdentifier": 0,
+					"Reprice": null,
+					"IsPriceBreakupAvailable": false,
+					"IsCancelationPolicyAvailble": false,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,316 @@
+{
+	"ErrorInfo": null,
+	"GeneralInfo": {
+		"ApiKey": "TGXZXSYYYY==",
+		"CustomerCode": null,
+		"SessionId": "d07b458ca1cf4c5bb5358e3b31fabe4d",
+		"TimeStamp": "2024-12-09T12:02:31Z"
+	},
+	"Monetary": {
+		"Currency": {
+			"Code": "AED",
+			"ExchangeRate": 0.274,
+			"Text": "AED"
+		}
+	},
+	"IsSoldOut": false,
+	"IsPriceChanged": false,
+	"IsBookable": true,
+	"Hotel": {
+		"HotelInfo": {
+			"Name": "Melody Queen Hotel by Aura",
+			"Image": "https://static.giinfotech.ae/medianew/thumbnail/548119/Lobby_3d258e72_z.jpg",
+			"Description": "",
+			"StarRating": "1",
+			"Lat": "25.27068",
+			"Lon": "55.308002",
+			"Add1": "Al Nasser Square",
+			"Add2": "Near Al Nasser Mosque , Deira , P.O. Box 80546 , Dubai",
+			"City": "Dubai",
+			"Location": "",
+			"HotelRemarks": null,
+			"checkinInstruction": null,
+			"CheckOutInstruction": null
+		},
+		"Rooms": {
+			"Room": [
+				{
+					"Adult": 1,
+					"Children": null,
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Free WiFi",
+					"RateType": "Refundable",
+					"RateKey": "390869520PT",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 0,
+					"RoomIdentifier": 1,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": 2,
+					"Policies": {
+						"Policy": [
+							{
+								"Condition": [
+									{
+										"FromDate": "2025-04-14T00:00:00",
+										"ToDate": "2025-04-15T00:00:00",
+										"Time": null,
+										"Timezone": "+04:00",
+										"Unit": 1,
+										"Text": "",
+										"FromTime": "00:00",
+										"ToTime": "23:59",
+										"Percentage": "0",
+										"Nights": "1",
+										"Fixed": "0",
+										"SupplierFixed": "",
+										"ApplicableOn": "AverageNights"
+									}
+								],
+								"TextCondition": "Applicable Timezone (+04:00)",
+								"Type": "CAN",
+								"Currency": "AED",
+								"SupplierCurrency": "USD"
+							}
+						]
+					},
+					"Price": {
+						"Promotions": [
+							{
+								"Code": "791879063",
+								"Amount": 0.0,
+								"SupplierAmount": 0.0,
+								"Text": "Member’s exclusive price"
+							}
+						],
+						"Discount": null,
+						"ExtraBedPrice": 0.0,
+						"Gross": 313.95,
+						"Net": 392.16,
+						"Tax": 78.22,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 35.22,
+						"IsB2C": false,
+						"IsPackage": true,
+						"IsDynamic": false,
+						"IsExclusiveRate": false,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 86.02,
+						"SupplierTax": 21.43,
+						"SupplierNet": 107.45,
+						"SupplierCommission": 9.65,
+						"SupplierExtraBedPrice": 0.0,
+						"PriceBreakdownRules": {
+							"PerNightInfo": [
+								{
+									"StartDate": "2025-04-15T00:00:00",
+									"EndDate": "2025-04-15T23:59:00",
+									"SupplierAmount": 142.46,
+									"Amount": 142.46
+								},
+								{
+									"StartDate": "2025-04-16T00:00:00",
+									"EndDate": "2025-04-16T23:59:00",
+									"SupplierAmount": 142.46,
+									"Amount": 142.46
+								},
+								{
+									"StartDate": "2025-04-17T00:00:00",
+									"EndDate": "2025-04-17T23:59:00",
+									"SupplierAmount": 142.46,
+									"Amount": 142.46
+								}
+							]
+						}
+					},
+					"MarriageIdentifier": 1353,
+					"RoomCombinationId": 1353,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": {
+						"Remark": [
+							{
+								"Type": "mandatory_fee",
+								"Text": "AED 93.73"
+							},
+							{
+								"Type": "mandatory_tax",
+								"Text": "AED 56.23"
+							},
+							{
+								"Type": "Mandatory",
+								"Text": "<p>You'll be asked to pay the following charges at the property. Fees may include applicable taxes:</p> <ul><li>A tax is imposed by the city: AED 15.00 per accommodation, per night</li><li>Cleaning fee: AED 35 per accommodation, per night</li></ul> <p>We have included all charges provided to us by the property. </p>"
+							},
+							{
+								"Type": "Optional",
+								"Text": "<ul> <li>Fee for continental breakfast: approximately AED 12 for adults and AED 10 for children</li><li>Late check-in fee: 20-percent of room rate for check-in between 11:00 PM and 2:00 AM</li></ul> <p>The above list may not be comprehensive. Fees and deposits may not include tax and are subject to change. </p>"
+							},
+							{
+								"Type": "Disclaimer",
+								"Text": "Package rate may include some or all of the following: Flight, Accommodation, Car Rental, Transfer or Activities."
+							},
+							{
+								"Type": "Note",
+								"Text": "The charges and fees are based on destination currency."
+							}
+						]
+					},
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": {
+						"ChildAge": [
+							{
+								"Identifier": 1,
+								"Text": "5"
+							},
+							{
+								"Identifier": 2,
+								"Text": "8"
+							}
+						],
+						"Count": 2
+					},
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Free WiFi",
+					"RateType": "Refundable",
+					"RateKey": "390869520PT",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 0,
+					"RoomIdentifier": 2,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": 2,
+					"Policies": {
+						"Policy": [
+							{
+								"Condition": [
+									{
+										"FromDate": "2025-04-14T00:00:00",
+										"ToDate": "2025-04-15T00:00:00",
+										"Time": null,
+										"Timezone": "+04:00",
+										"Unit": 1,
+										"Text": "",
+										"FromTime": "00:00",
+										"ToTime": "23:59",
+										"Percentage": "0",
+										"Nights": "1",
+										"Fixed": "0",
+										"SupplierFixed": "",
+										"ApplicableOn": "AverageNights"
+									}
+								],
+								"TextCondition": "Applicable Timezone (+04:00)",
+								"Type": "CAN",
+								"Currency": "AED",
+								"SupplierCurrency": "USD"
+							}
+						]
+					},
+					"Price": {
+						"Promotions": [
+							{
+								"Code": "791879063",
+								"Amount": 0.0,
+								"SupplierAmount": 0.0,
+								"Text": "Member’s exclusive price"
+							}
+						],
+						"Discount": null,
+						"ExtraBedPrice": 0.0,
+						"Gross": 313.95,
+						"Net": 392.16,
+						"Tax": 78.22,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 35.22,
+						"IsB2C": false,
+						"IsPackage": true,
+						"IsDynamic": false,
+						"IsExclusiveRate": false,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 86.02,
+						"SupplierTax": 21.43,
+						"SupplierNet": 107.45,
+						"SupplierCommission": 9.65,
+						"SupplierExtraBedPrice": 0.0,
+						"PriceBreakdownRules": {
+							"PerNightInfo": [
+								{
+									"StartDate": "2025-04-15T00:00:00",
+									"EndDate": "2025-04-15T23:59:00",
+									"SupplierAmount": 142.46,
+									"Amount": 142.46
+								},
+								{
+									"StartDate": "2025-04-16T00:00:00",
+									"EndDate": "2025-04-16T23:59:00",
+									"SupplierAmount": 142.46,
+									"Amount": 142.46
+								},
+								{
+									"StartDate": "2025-04-17T00:00:00",
+									"EndDate": "2025-04-17T23:59:00",
+									"SupplierAmount": 142.46,
+									"Amount": 142.46
+								}
+							]
+						}
+					},
+					"MarriageIdentifier": 1353,
+					"RoomCombinationId": 1353,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": {
+						"Remark": [
+							{
+								"Type": "mandatory_fee",
+								"Text": "AED 93.73"
+							},
+							{
+								"Type": "mandatory_tax",
+								"Text": "AED 56.23"
+							},
+							{
+								"Type": "Mandatory",
+								"Text": "<p>You'll be asked to pay the following charges at the property. Fees may include applicable taxes:</p> <ul><li>A tax is imposed by the city: AED 15.00 per accommodation, per night</li><li>Cleaning fee: AED 35 per accommodation, per night</li></ul> <p>We have included all charges provided to us by the property. </p>"
+							},
+							{
+								"Type": "Optional",
+								"Text": "<ul> <li>Fee for continental breakfast: approximately AED 12 for adults and AED 10 for children</li><li>Late check-in fee: 20-percent of room rate for check-in between 11:00 PM and 2:00 AM</li></ul> <p>The above list may not be comprehensive. Fees and deposits may not include tax and are subject to change. </p>"
+							},
+							{
+								"Type": "Disclaimer",
+								"Text": "Package rate may include some or all of the following: Flight, Accommodation, Car Rental, Transfer or Activities."
+							},
+							{
+								"Type": "Note",
+								"Text": "The charges and fees are based on destination currency."
+							}
+						]
+					},
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				}
+			]
+		},
+		"Code": "548119",
+		"Name": "Melody Queen Hotel by Aura"
+	}
+}

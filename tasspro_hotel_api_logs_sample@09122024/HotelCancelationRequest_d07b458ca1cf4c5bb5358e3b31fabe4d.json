@@ -1,0 +1,15 @@
+{
+	"SessionId": "d07b458ca1cf4c5bb5358e3b31fabe4d",
+	"Currency": "AED",
+	"ADSConfirmationNumber": "46F0D8CFE",
+	"CancelRooms": {
+		"CancelRoom": [
+			{
+				"RoomIdentifier": 1
+			},
+			{
+				"RoomIdentifier": 2
+			}
+		]
+	}
+}

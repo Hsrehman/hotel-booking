@@ -1,0 +1,38 @@
+{
+    "isSuccess": true,
+    "statusCode": 200,
+    "data": [
+        {
+            "key": "604-0",
+            "value": "Abu Dhabi"
+        },
+        {
+            "key": "1720-0",
+            "value": "Ajman"
+        },
+        {
+            "key": "160-0",
+            "value": "Dubai"
+        },
+        {
+            "key": "609-0",
+            "value": "Fujairah"
+        },
+        {
+            "key": "608-0",
+            "value": "Ras al-Khaimah"
+        },
+        {
+            "key": "605-0",
+            "value": "Sharjah & Ajman"
+        },
+        {
+            "key": "607-0",
+            "value": "Umm al-Quwain"
+        },
+        {
+            "key": "650-0",
+            "value": "United Arab Emirates"
+        }
+    ]
+}

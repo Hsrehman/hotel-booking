@@ -1,0 +1,959 @@
+{
+	"GeneralInfo": {
+		"ApiKey": "TGXZXSYYYY==",
+		"CustomerCode": null,
+		"SessionId": "d07b458ca1cf4c5bb5358e3b31fabe4d",
+		"TimeStamp": "2024-12-09T12:02:08Z"
+	},
+	"ErrorInfo": null,
+	"Monetary": {
+		"Currency": {
+			"Code": "AED",
+			"ExchangeRate": 0.274,
+			"Text": "AED"
+		}
+	},
+	"Hotel": {
+		"HotelInfo": {
+			"Name": "Melody Queen Hotel by Aura",
+			"Image": "https://static.giinfotech.ae/medianew/thumbnail/548119/Lobby_3d258e72_z.jpg",
+			"Description": "",
+			"StarRating": "1",
+			"Lat": "25.27068",
+			"Lon": "55.308002",
+			"Add1": "Al Nasser Square",
+			"Add2": "Near Al Nasser Mosque , Deira , P.O. Box 80546 , Dubai",
+			"City": "Dubai",
+			"Location": "",
+			"HotelRemarks": null,
+			"checkinInstruction": null,
+			"CheckOutInstruction": null
+		},
+		"Rooms": {
+			"Room": [
+				{
+					"Adult": 1,
+					"Children": null,
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Room Only",
+					"RateType": "Non-Refundable",
+					"RateKey": "390869526PT",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 7,
+					"RoomIdentifier": 1,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": 2,
+					"Price": {
+						"Promotions": [
+							{
+								"Code": "791879063",
+								"Amount": 0,
+								"SupplierAmount": 0,
+								"Text": "Member’s exclusive price"
+							}
+						],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 282.67,
+						"Net": 353.03,
+						"Tax": 70.37,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 31.79,
+						"IsB2C": false,
+						"IsPackage": true,
+						"IsDynamic": false,
+						"IsExclusiveRate": false,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 77.45,
+						"SupplierTax": 19.28,
+						"SupplierNet": 96.73,
+						"SupplierCommission": 8.71,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1354,
+					"RoomCombinationId": 1354,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": {
+						"ChildAge": [
+							{
+								"Identifier": 1,
+								"Text": "5"
+							},
+							{
+								"Identifier": 2,
+								"Text": "8"
+							}
+						],
+						"Count": 2
+					},
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Room Only",
+					"RateType": "Non-Refundable",
+					"RateKey": "390869526PT",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 8,
+					"RoomIdentifier": 2,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [
+							{
+								"Code": "791879063",
+								"Amount": 0,
+								"SupplierAmount": 0,
+								"Text": "Member’s exclusive price"
+							}
+						],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 282.67,
+						"Net": 353.03,
+						"Tax": 70.37,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 31.79,
+						"IsB2C": false,
+						"IsPackage": true,
+						"IsDynamic": false,
+						"IsExclusiveRate": false,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 77.45,
+						"SupplierTax": 19.28,
+						"SupplierNet": 96.73,
+						"SupplierCommission": 8.71,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1354,
+					"RoomCombinationId": 1354,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": null,
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Room Only",
+					"RateType": "Refundable",
+					"RateKey": "390869520PT",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 5,
+					"RoomIdentifier": 1,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [
+							{
+								"Code": "791879063",
+								"Amount": 0,
+								"SupplierAmount": 0,
+								"Text": "Member’s exclusive price"
+							}
+						],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 313.95,
+						"Net": 392.16,
+						"Tax": 78.22,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 35.22,
+						"IsB2C": false,
+						"IsPackage": true,
+						"IsDynamic": false,
+						"IsExclusiveRate": false,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 86.02,
+						"SupplierTax": 21.43,
+						"SupplierNet": 107.45,
+						"SupplierCommission": 9.65,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1353,
+					"RoomCombinationId": 1353,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": {
+						"ChildAge": [
+							{
+								"Identifier": 1,
+								"Text": "5"
+							},
+							{
+								"Identifier": 2,
+								"Text": "8"
+							}
+						],
+						"Count": 2
+					},
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Room Only",
+					"RateType": "Refundable",
+					"RateKey": "390869520PT",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 6,
+					"RoomIdentifier": 2,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [
+							{
+								"Code": "791879063",
+								"Amount": 0,
+								"SupplierAmount": 0,
+								"Text": "Member’s exclusive price"
+							}
+						],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 313.95,
+						"Net": 392.16,
+						"Tax": 78.22,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 35.22,
+						"IsB2C": false,
+						"IsPackage": true,
+						"IsDynamic": false,
+						"IsExclusiveRate": false,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 86.02,
+						"SupplierTax": 21.43,
+						"SupplierNet": 107.45,
+						"SupplierCommission": 9.65,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1353,
+					"RoomCombinationId": 1353,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": null,
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Room Only",
+					"RateType": "Non-Refundable",
+					"RateKey": "390869524ST",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 13,
+					"RoomIdentifier": 1,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 329.64,
+						"Net": 411.98,
+						"Tax": 82.34,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 36.17,
+						"IsB2C": false,
+						"IsPackage": false,
+						"IsDynamic": false,
+						"IsExclusiveRate": true,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 90.32,
+						"SupplierTax": 22.56,
+						"SupplierNet": 112.88,
+						"SupplierCommission": 9.91,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1357,
+					"RoomCombinationId": 1357,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": {
+						"ChildAge": [
+							{
+								"Identifier": 1,
+								"Text": "5"
+							},
+							{
+								"Identifier": 2,
+								"Text": "8"
+							}
+						],
+						"Count": 2
+					},
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Room Only",
+					"RateType": "Non-Refundable",
+					"RateKey": "390869524ST",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 14,
+					"RoomIdentifier": 2,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 329.64,
+						"Net": 411.98,
+						"Tax": 82.34,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 36.17,
+						"IsB2C": false,
+						"IsPackage": false,
+						"IsDynamic": false,
+						"IsExclusiveRate": true,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 90.32,
+						"SupplierTax": 22.56,
+						"SupplierNet": 112.88,
+						"SupplierCommission": 9.91,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1357,
+					"RoomCombinationId": 1357,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": null,
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Continental breakfast,Free WiFi",
+					"RateType": "Non-Refundable",
+					"RateKey": "390869525PT",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 1,
+					"RoomIdentifier": 1,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [
+							{
+								"Code": "791879063",
+								"Amount": 0,
+								"SupplierAmount": 0,
+								"Text": "Member’s exclusive price"
+							}
+						],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 342.71,
+						"Net": 430,
+						"Tax": 87.3,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 30.99,
+						"IsB2C": false,
+						"IsPackage": true,
+						"IsDynamic": false,
+						"IsExclusiveRate": false,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 93.9,
+						"SupplierTax": 23.92,
+						"SupplierNet": 117.82,
+						"SupplierCommission": 8.49,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1351,
+					"RoomCombinationId": 1351,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": {
+						"ChildAge": [
+							{
+								"Identifier": 1,
+								"Text": "5"
+							},
+							{
+								"Identifier": 2,
+								"Text": "8"
+							}
+						],
+						"Count": 2
+					},
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Continental breakfast,Free WiFi",
+					"RateType": "Non-Refundable",
+					"RateKey": "390869525PT",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 2,
+					"RoomIdentifier": 2,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [
+							{
+								"Code": "791879063",
+								"Amount": 0,
+								"SupplierAmount": 0,
+								"Text": "Member’s exclusive price"
+							}
+						],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 342.71,
+						"Net": 430,
+						"Tax": 87.3,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 30.99,
+						"IsB2C": false,
+						"IsPackage": true,
+						"IsDynamic": false,
+						"IsExclusiveRate": false,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 93.9,
+						"SupplierTax": 23.92,
+						"SupplierNet": 117.82,
+						"SupplierCommission": 8.49,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1351,
+					"RoomCombinationId": 1351,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": null,
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Room Only",
+					"RateType": "Refundable",
+					"RateKey": "390869519ST",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 9,
+					"RoomIdentifier": 1,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 366.28,
+						"Net": 457.85,
+						"Tax": 91.57,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 40.26,
+						"IsB2C": false,
+						"IsPackage": false,
+						"IsDynamic": false,
+						"IsExclusiveRate": true,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 100.36,
+						"SupplierTax": 25.09,
+						"SupplierNet": 125.45,
+						"SupplierCommission": 11.03,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1355,
+					"RoomCombinationId": 1355,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": {
+						"ChildAge": [
+							{
+								"Identifier": 1,
+								"Text": "5"
+							},
+							{
+								"Identifier": 2,
+								"Text": "8"
+							}
+						],
+						"Count": 2
+					},
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Room Only",
+					"RateType": "Refundable",
+					"RateKey": "390869519ST",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 10,
+					"RoomIdentifier": 2,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 366.28,
+						"Net": 457.85,
+						"Tax": 91.57,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 40.26,
+						"IsB2C": false,
+						"IsPackage": false,
+						"IsDynamic": false,
+						"IsExclusiveRate": true,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 100.36,
+						"SupplierTax": 25.09,
+						"SupplierNet": 125.45,
+						"SupplierCommission": 11.03,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1355,
+					"RoomCombinationId": 1355,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": null,
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Continental breakfast,Free WiFi",
+					"RateType": "Refundable",
+					"RateKey": "390869522PT",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 3,
+					"RoomIdentifier": 1,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [
+							{
+								"Code": "791879063",
+								"Amount": 0,
+								"SupplierAmount": 0,
+								"Text": "Member’s exclusive price"
+							}
+						],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 380.66,
+						"Net": 477.74,
+						"Tax": 97.09,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 34.42,
+						"IsB2C": false,
+						"IsPackage": true,
+						"IsDynamic": false,
+						"IsExclusiveRate": false,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 104.3,
+						"SupplierTax": 26.6,
+						"SupplierNet": 130.9,
+						"SupplierCommission": 9.43,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1352,
+					"RoomCombinationId": 1352,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": {
+						"ChildAge": [
+							{
+								"Identifier": 1,
+								"Text": "5"
+							},
+							{
+								"Identifier": 2,
+								"Text": "8"
+							}
+						],
+						"Count": 2
+					},
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Continental breakfast,Free WiFi",
+					"RateType": "Refundable",
+					"RateKey": "390869522PT",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 4,
+					"RoomIdentifier": 2,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [
+							{
+								"Code": "791879063",
+								"Amount": 0,
+								"SupplierAmount": 0,
+								"Text": "Member’s exclusive price"
+							}
+						],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 380.66,
+						"Net": 477.74,
+						"Tax": 97.09,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 34.42,
+						"IsB2C": false,
+						"IsPackage": true,
+						"IsDynamic": false,
+						"IsExclusiveRate": false,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 104.3,
+						"SupplierTax": 26.6,
+						"SupplierNet": 130.9,
+						"SupplierCommission": 9.43,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1352,
+					"RoomCombinationId": 1352,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": null,
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Continental breakfast,Free WiFi",
+					"RateType": "Non-Refundable",
+					"RateKey": "390869523ST",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 15,
+					"RoomIdentifier": 1,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 408.76,
+						"Net": 510.84,
+						"Tax": 102.09,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 44.86,
+						"IsB2C": false,
+						"IsPackage": false,
+						"IsDynamic": false,
+						"IsExclusiveRate": true,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 112,
+						"SupplierTax": 27.97,
+						"SupplierNet": 139.97,
+						"SupplierCommission": 12.29,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1358,
+					"RoomCombinationId": 1358,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": {
+						"ChildAge": [
+							{
+								"Identifier": 1,
+								"Text": "5"
+							},
+							{
+								"Identifier": 2,
+								"Text": "8"
+							}
+						],
+						"Count": 2
+					},
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Continental breakfast,Free WiFi",
+					"RateType": "Non-Refundable",
+					"RateKey": "390869523ST",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 16,
+					"RoomIdentifier": 2,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 408.76,
+						"Net": 510.84,
+						"Tax": 102.09,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 44.86,
+						"IsB2C": false,
+						"IsPackage": false,
+						"IsDynamic": false,
+						"IsExclusiveRate": true,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 112,
+						"SupplierTax": 27.97,
+						"SupplierNet": 139.97,
+						"SupplierCommission": 12.29,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1358,
+					"RoomCombinationId": 1358,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": null,
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Continental breakfast,Free WiFi",
+					"RateType": "Refundable",
+					"RateKey": "390869521ST",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 11,
+					"RoomIdentifier": 1,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 454.28,
+						"Net": 567.63,
+						"Tax": 113.36,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 49.82,
+						"IsB2C": false,
+						"IsPackage": false,
+						"IsDynamic": false,
+						"IsExclusiveRate": true,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 124.47,
+						"SupplierTax": 31.06,
+						"SupplierNet": 155.53,
+						"SupplierCommission": 13.65,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1356,
+					"RoomCombinationId": 1356,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				},
+				{
+					"Adult": 1,
+					"Children": {
+						"ChildAge": [
+							{
+								"Identifier": 1,
+								"Text": "5"
+							},
+							{
+								"Identifier": 2,
+								"Text": "8"
+							}
+						],
+						"Count": 2
+					},
+					"RoomName": "Deluxe Triple Room",
+					"Meal": "Continental breakfast,Free WiFi",
+					"RateType": "Refundable",
+					"RateKey": "390869521ST",
+					"Status": "Available",
+					"BedTypes": {
+						"BedType": "TwinBed"
+					},
+					"RoomIndex": 12,
+					"RoomIdentifier": 2,
+					"GroupCode": 175,
+					"SupplierGroupCode": 135,
+					"ShortCode": "ArabianOryx",
+					"ContractType": "T",
+					"IsCache": false,
+					"MinStay": null,
+					"Price": {
+						"Promotions": [],
+						"Discount": null,
+						"ExtraBedPrice": 0,
+						"Gross": 454.28,
+						"Net": 567.63,
+						"Tax": 113.36,
+						"TaxType": "tax_and_service_fee",
+						"Commission": 49.82,
+						"IsB2C": false,
+						"IsPackage": false,
+						"IsDynamic": false,
+						"IsExclusiveRate": true,
+						"SupplierCurrency": "USD",
+						"SupplierGross": 124.47,
+						"SupplierTax": 31.06,
+						"SupplierNet": 155.53,
+						"SupplierCommission": 13.65,
+						"SupplierExtraBedPrice": 0
+					},
+					"MarriageIdentifier": 1356,
+					"RoomCombinationId": 1356,
+					"Reprice": "R",
+					"IsPriceBreakupAvailable": true,
+					"IsCancelationPolicyAvailble": true,
+					"Remarks": null,
+					"ExtraBedCount": 0,
+					"Inclusions": null
+				}
+			]
+		},
+		"Code": "548119",
+		"Name": "Melody Queen Hotel by Aura"
+	}
+}

@@ -1,0 +1,20 @@
+
+{
+	"isSuccess": true,
+	"statusCode": 200,
+	"exceptionMessage": null,
+	"errors": null,
+	"data": [
+		{
+			"destinationId": "1186-0",
+			"cityName": "Moscow and the Golden Ring",
+			"countryName": "Russian Federation",
+			"stateCode": null,
+			"countryCode": "RU"
+		}
+	]
+}
+
+
+
+

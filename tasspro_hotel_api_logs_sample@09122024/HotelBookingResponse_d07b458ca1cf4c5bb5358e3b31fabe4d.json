@@ -1,0 +1,98 @@
+{
+	"ErrorInfo": null,
+	"GeneralInfo": {
+		"ApiKey": "TGXZXSYYYY==",
+		"CustomerCode": null,
+		"SessionId": "d07b458ca1cf4c5bb5358e3b31fabe4d",
+		"TimeStamp": "2024-12-09T12:03:14Z"
+	},
+	"HotelCode": "548119",
+	"SupplierHotelCode": "94688854",
+	"DestinationCode": "160-0",
+	"CountryCode": "AE",
+	"Currency": "AED",
+	"Nationality": "AE",
+	"CustomerRefNumber": "TSSPRO-1240156",
+	"GroupCode": 175,
+	"SupplierGroupCode": 135,
+	"BookingCreation": "2024-12-09T08:03:19.846Z",
+	"HotelConfirmationNumber": "501654455",
+	"ADSConfirmationNumber": "46F0D8CFE",
+	"SupplierConfirmationNumber": "9009659464384",
+	"Status": "2",
+	"Rooms": [
+		{
+			"HotelConfirmationNumber": "374662745",
+			"Adult": 1,
+			"Children": null,
+			"RoomName": null,
+			"Meal": null,
+			"RateType": null,
+			"RateKey": null,
+			"Status": "Confirmed",
+			"BedTypes": null,
+			"RoomIndex": 1,
+			"RoomIdentifier": 1,
+			"GroupCode": 0,
+			"SupplierGroupCode": 0,
+			"ShortCode": "ArabianOryx",
+			"ContractType": null,
+			"IsCache": false,
+			"MinStay": null,
+			"Policies": null,
+			"Guests": null,
+			"Price": null,
+			"MarriageIdentifier": 0,
+			"Reprice": null,
+			"IsPriceBreakupAvailable": false,
+			"IsCancelationPolicyAvailble": false,
+			"Remarks": null,
+			"ExtraBedCount": 0,
+			"Inclusions": null
+		},
+		{
+			"ADSConfirmationNumber": null,
+			"HotelConfirmationNumber": "374662748",
+			"SupplierConfirmationNumber": null,
+			"RoomConfirmationNumber": "374662748",
+			"Adult": 1,
+			"Children": {
+				"ChildAge": [
+					{
+						"Identifier": 1,
+						"Text": "5"
+					},
+					{
+						"Identifier": 2,
+						"Text": "8"
+					}
+				],
+				"Count": 2
+			},
+			"RoomName": null,
+			"Meal": null,
+			"RateType": null,
+			"RateKey": null,
+			"Status": "Confirmed",
+			"BedTypes": null,
+			"RoomIndex": 2,
+			"RoomIdentifier": 2,
+			"GroupCode": 0,
+			"SupplierGroupCode": 0,
+			"ShortCode": "ArabianOryx",
+			"ContractType": null,
+			"IsCache": false,
+			"MinStay": null,
+			"Policies": null,
+			"Guests": null,
+			"Price": null,
+			"MarriageIdentifier": 0,
+			"Reprice": null,
+			"IsPriceBreakupAvailable": false,
+			"IsCancelationPolicyAvailble": false,
+			"Remarks": null,
+			"ExtraBedCount": 0,
+			"Inclusions": null
+		}
+	]
+}

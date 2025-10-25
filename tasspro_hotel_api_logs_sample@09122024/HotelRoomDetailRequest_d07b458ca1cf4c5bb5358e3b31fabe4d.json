@@ -1,0 +1,32 @@
+{
+	"SessionId": "d07b458ca1cf4c5bb5358e3b31fabe4d",
+	"SearchParameter": {
+		"HotelCode": "548119",
+		"Currency": "AED",
+		"Rooms": {
+			"Room": [
+				{
+					"RoomIdentifier": 1,
+					"Adult": 1
+				},
+				{
+					"RoomIdentifier": 2,
+					"Adult": 1,
+					"Children": {
+						"ChildAge": [
+							{
+								"Identifier": 1,
+								"Text": "5"
+							},
+							{
+								"Identifier": 2,
+								"Text": "8"
+							}
+						],
+						"Count": 2
+					}
+				}
+			]
+		}
+	}
+}

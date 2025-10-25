@@ -1,0 +1,17 @@
+{
+	"ErrorInfo": null,
+	"GeneralInfo": {
+		"ApiKey": "TGXZXSYYYY==",
+		"SessionId": "d07b458ca1cf4c5bb5358e3b31fabe4d",
+		"TimeStamp": "2024-12-09T12:04:06Z"
+	},
+	"Monetary": {
+		"Currency": {
+			"Code": "AED",
+			"ExchangeRate": 0.274,
+			"Text": "AED"
+		}
+	},
+	"ADSConfirmationNumber": "46F0D8CFE",	
+	"Status": "4"
+}
