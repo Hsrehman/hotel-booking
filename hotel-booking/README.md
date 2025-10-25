@@ -56,9 +56,9 @@ JWT_REFRESH_SECRET="your-super-secret-refresh-key-change-this-in-production"
 
 # TassPro API Configuration
 TASSPRO_API_BASE_URL="http://uat-apiv2.giinfotech.ae/api/v2/hotel"
-TASSPRO_API_KEY="VyBZUyOkbCSNvvDEMOV2=="
-TASSPRO_CUSTOMER_CODE="4805"
-TASSPRO_REGION_ID="123"
+TASSPRO_API_KEY="your-tasspro-api-key-here"
+TASSPRO_CUSTOMER_CODE="your-customer-code-here"
+TASSPRO_REGION_ID="your-region-id-here"
 
 # SMTP Configuration (for Phase 5)
 SMTP_HOST=""

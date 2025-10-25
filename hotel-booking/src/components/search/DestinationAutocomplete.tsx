@@ -32,7 +32,8 @@ export default function DestinationAutocomplete({
 
   const inputRef = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const debounceRef = useRef<NodeJS.Timeout>();
+  const debounceRef = useRef<NodeJS.Timeout | null>(null);
+  const abortControllerRef = useRef<AbortController | null>(null);
 
   // Debounced search function
   const searchDestinations = useCallback(async (searchQuery: string) => {
@@ -42,27 +43,50 @@ export default function DestinationAutocomplete({
       return;
     }
 
+    // Cancel previous request if it exists
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+
+    // Create new AbortController for this request
+    const abortController = new AbortController();
+    abortControllerRef.current = abortController;
+
     setIsLoading(true);
     setError(null);
 
     try {
-      const response = await fetch(`/api/destinations/autocomplete?q=${encodeURIComponent(searchQuery)}`);
+      const response = await fetch(`/api/destinations/autocomplete?q=${encodeURIComponent(searchQuery)}`, {
+        signal: abortController.signal,
+      });
       
       if (!response.ok) {
         throw new Error('Failed to fetch destinations');
       }
 
       const data = await response.json();
-      setDestinations(data.destinations || []);
-      setIsOpen(data.destinations && data.destinations.length > 0);
-      setSelectedIndex(-1);
+      
+      // Only update state if request wasn't aborted
+      if (!abortController.signal.aborted) {
+        setDestinations(data.destinations || []);
+        setIsOpen(data.destinations && data.destinations.length > 0);
+        setSelectedIndex(-1);
+      }
     } catch (err) {
+      // Don't show error if request was aborted
+      if (err instanceof Error && err.name === 'AbortError') {
+        return;
+      }
+      
       console.error('Error fetching destinations:', err);
       setError('Failed to load destinations');
       setDestinations([]);
       setIsOpen(false);
     } finally {
-      setIsLoading(false);
+      // Only update loading state if request wasn't aborted
+      if (!abortController.signal.aborted) {
+        setIsLoading(false);
+      }
     }
   }, []);
 
@@ -83,10 +107,28 @@ export default function DestinationAutocomplete({
   };
 
   // Handle destination selection
-  const handleSelect = (destination: Destination) => {
+  const handleSelect = async (destination: Destination) => {
     setQuery(destination.cityName);
     setIsOpen(false);
     setSelectedIndex(-1);
+    
+    // Track analytics for actual selection
+    try {
+      await fetch('/api/destinations/analytics', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          destinationId: destination.destinationId,
+          action: 'select',
+        }),
+      });
+    } catch (error) {
+      console.error('Failed to track analytics:', error);
+      // Don't block the user experience for analytics failures
+    }
+    
     onSelect(destination);
   };
 
@@ -136,11 +178,14 @@ export default function DestinationAutocomplete({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Cleanup timeout on unmount
+  // Cleanup timeout and abort requests on unmount
   useEffect(() => {
     return () => {
       if (debounceRef.current) {
         clearTimeout(debounceRef.current);
+      }
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort();
       }
     };
   }, []);

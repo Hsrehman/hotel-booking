@@ -1,4 +1,4 @@
-import prisma from '@/lib/db/prisma';
+import { prisma } from '@/lib/db/prisma';
 import { TassProApiClient } from '@/lib/api/tasspro-client';
 
 const tassproClient = new TassProApiClient();
@@ -157,7 +157,7 @@ async function seedDestinations() {
   });
   
   console.log('\n📋 Sample destinations:');
-  sampleDestinations.forEach(dest => {
+  sampleDestinations.forEach((dest: any) => {
     console.log(`   ${dest.cityName}, ${dest.countryName} (${dest.destinationId})`);
   });
 }
@@ -186,33 +186,31 @@ async function seedHotels() {
       if (response.isSuccess && response.data && Array.isArray(response.data)) {
         for (const hotel of response.data) {
           await prisma.hotel.upsert({
-            where: { systemId: hotel.systemId },
+            where: { hotelCode: hotel.systemId },
             update: {
               name: hotel.name,
-              destinationId: hotel.destinationId,
-              addressLine1: hotel.address1,
-              city: hotel.city,
-              countryCode: destination.countryCode,
-              countryName: destination.countryName,
-              latitude: hotel.geoCode?.lat,
-              longitude: hotel.geoCode?.lon,
-              starRating: hotel.rating,
+              description: '', // Not available in HotelsInfoByDestinationIdResponse
+              starRating: hotel.rating.toString(),
+              address: hotel.address1,
+              lat: hotel.geoCode?.lat.toString(),
+              lon: hotel.geoCode?.lon.toString(),
               imageUrl: hotel.imageUrl,
-              lastUsed: new Date(),
+              images: [], // Not available in HotelsInfoByDestinationIdResponse
+              amenities: [], // Not available in HotelsInfoByDestinationIdResponse
+              destinationId: destination.id,
             },
             create: {
-              systemId: hotel.systemId,
+              hotelCode: hotel.systemId,
               name: hotel.name,
-              destinationId: hotel.destinationId,
-              addressLine1: hotel.address1,
-              city: hotel.city,
-              countryCode: destination.countryCode,
-              countryName: destination.countryName,
-              latitude: hotel.geoCode?.lat,
-              longitude: hotel.geoCode?.lon,
-              starRating: hotel.rating,
+              description: '', // Not available in HotelsInfoByDestinationIdResponse
+              starRating: hotel.rating.toString(),
+              address: hotel.address1,
+              lat: hotel.geoCode?.lat.toString(),
+              lon: hotel.geoCode?.lon.toString(),
               imageUrl: hotel.imageUrl,
-              lastUsed: new Date(),
+              images: [], // Not available in HotelsInfoByDestinationIdResponse
+              amenities: [], // Not available in HotelsInfoByDestinationIdResponse
+              destinationId: destination.id,
             },
           });
         }

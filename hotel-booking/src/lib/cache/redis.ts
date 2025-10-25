@@ -1,30 +1,62 @@
 import Redis from 'ioredis';
 
 class CacheService {
-  private redis: Redis;
+  private redis: Redis | null = null;
   private isConnected: boolean = false;
+  private connectionPromise: Promise<Redis> | null = null;
 
-  constructor() {
-    this.redis = new Redis(process.env.REDIS_URL || 'redis://localhost:6379', {
-      retryDelayOnFailover: 100,
-      enableReadyCheck: false,
-      maxRetriesPerRequest: null,
-    });
+  /**
+   * Get Redis instance with lazy initialization
+   */
+  private async getRedis(): Promise<Redis> {
+    if (this.redis && this.isConnected) {
+      return this.redis;
+    }
 
-    this.redis.on('connect', () => {
-      console.log('[Redis] Connected to Redis');
-      this.isConnected = true;
-    });
+    if (this.connectionPromise) {
+      return this.connectionPromise;
+    }
 
-    this.redis.on('error', (error) => {
-      console.error('[Redis] Connection error:', error);
+    this.connectionPromise = this.initializeRedis();
+    return this.connectionPromise;
+  }
+
+  /**
+   * Initialize Redis connection
+   */
+  private async initializeRedis(): Promise<Redis> {
+    try {
+      const redis = new Redis(process.env.REDIS_URL || 'redis://localhost:6379', {
+        enableReadyCheck: false,
+        maxRetriesPerRequest: null,
+        lazyConnect: true, // Don't connect immediately
+      });
+
+      redis.on('connect', () => {
+        console.log('[Redis] Connected to Redis');
+        this.isConnected = true;
+      });
+
+      redis.on('error', (error) => {
+        console.error('[Redis] Connection error:', error);
+        this.isConnected = false;
+      });
+
+      redis.on('close', () => {
+        console.log('[Redis] Connection closed');
+        this.isConnected = false;
+      });
+
+      // Connect lazily
+      await redis.connect();
+      
+      this.redis = redis;
+      return redis;
+    } catch (error) {
+      console.error('[Redis] Failed to initialize:', error);
       this.isConnected = false;
-    });
-
-    this.redis.on('close', () => {
-      console.log('[Redis] Connection closed');
-      this.isConnected = false;
-    });
+      throw error;
+    }
   }
 
   /**
@@ -32,12 +64,13 @@ class CacheService {
    */
   async get<T>(key: string): Promise<T | null> {
     try {
+      const redis = await this.getRedis();
       if (!this.isConnected) {
         console.warn('[Redis] Not connected, skipping cache get');
         return null;
       }
 
-      const value = await this.redis.get(key);
+      const value = await redis.get(key);
       if (value === null) {
         return null;
       }
@@ -54,6 +87,7 @@ class CacheService {
    */
   async set(key: string, value: any, ttlSeconds?: number): Promise<boolean> {
     try {
+      const redis = await this.getRedis();
       if (!this.isConnected) {
         console.warn('[Redis] Not connected, skipping cache set');
         return false;
@@ -62,9 +96,9 @@ class CacheService {
       const serializedValue = JSON.stringify(value);
       
       if (ttlSeconds) {
-        await this.redis.setex(key, ttlSeconds, serializedValue);
+        await redis.setex(key, ttlSeconds, serializedValue);
       } else {
-        await this.redis.set(key, serializedValue);
+        await redis.set(key, serializedValue);
       }
 
       return true;
@@ -79,12 +113,13 @@ class CacheService {
    */
   async del(key: string): Promise<boolean> {
     try {
+      const redis = await this.getRedis();
       if (!this.isConnected) {
         console.warn('[Redis] Not connected, skipping cache delete');
         return false;
       }
 
-      await this.redis.del(key);
+      await redis.del(key);
       return true;
     } catch (error) {
       console.error('[Redis] Error deleting cache:', error);
@@ -97,17 +132,18 @@ class CacheService {
    */
   async delPattern(pattern: string): Promise<number> {
     try {
+      const redis = await this.getRedis();
       if (!this.isConnected) {
         console.warn('[Redis] Not connected, skipping cache pattern delete');
         return 0;
       }
 
-      const keys = await this.redis.keys(pattern);
+      const keys = await redis.keys(pattern);
       if (keys.length === 0) {
         return 0;
       }
 
-      return await this.redis.del(...keys);
+      return await redis.del(...keys);
     } catch (error) {
       console.error('[Redis] Error deleting cache pattern:', error);
       return 0;
@@ -119,11 +155,12 @@ class CacheService {
    */
   async exists(key: string): Promise<boolean> {
     try {
+      const redis = await this.getRedis();
       if (!this.isConnected) {
         return false;
       }
 
-      const result = await this.redis.exists(key);
+      const result = await redis.exists(key);
       return result === 1;
     } catch (error) {
       console.error('[Redis] Error checking cache existence:', error);
@@ -136,11 +173,12 @@ class CacheService {
    */
   async ttl(key: string): Promise<number> {
     try {
+      const redis = await this.getRedis();
       if (!this.isConnected) {
         return -1;
       }
 
-      return await this.redis.ttl(key);
+      return await redis.ttl(key);
     } catch (error) {
       console.error('[Redis] Error getting TTL:', error);
       return -1;
@@ -152,11 +190,12 @@ class CacheService {
    */
   async incr(key: string): Promise<number> {
     try {
+      const redis = await this.getRedis();
       if (!this.isConnected) {
         return 0;
       }
 
-      return await this.redis.incr(key);
+      return await redis.incr(key);
     } catch (error) {
       console.error('[Redis] Error incrementing cache:', error);
       return 0;
@@ -168,11 +207,12 @@ class CacheService {
    */
   async expire(key: string, ttlSeconds: number): Promise<boolean> {
     try {
+      const redis = await this.getRedis();
       if (!this.isConnected) {
         return false;
       }
 
-      const result = await this.redis.expire(key, ttlSeconds);
+      const result = await redis.expire(key, ttlSeconds);
       return result === 1;
     } catch (error) {
       console.error('[Redis] Error setting expiration:', error);
@@ -293,12 +333,13 @@ class CacheService {
    */
   async clearAll(): Promise<void> {
     try {
+      const redis = await this.getRedis();
       if (!this.isConnected) {
         console.warn('[Redis] Not connected, skipping cache clear');
         return;
       }
 
-      await this.redis.flushall();
+      await redis.flushall();
       console.log('[Redis] All cache cleared');
     } catch (error) {
       console.error('[Redis] Error clearing cache:', error);
@@ -310,12 +351,13 @@ class CacheService {
    */
   async getStats(): Promise<any> {
     try {
+      const redis = await this.getRedis();
       if (!this.isConnected) {
         return null;
       }
 
-      const info = await this.redis.info('memory');
-      const keyspace = await this.redis.info('keyspace');
+      const info = await redis.info('memory');
+      const keyspace = await redis.info('keyspace');
       
       return {
         connected: this.isConnected,
@@ -333,8 +375,10 @@ class CacheService {
    */
   async close(): Promise<void> {
     try {
-      await this.redis.quit();
-      console.log('[Redis] Connection closed gracefully');
+      if (this.redis) {
+        await this.redis.quit();
+        console.log('[Redis] Connection closed gracefully');
+      }
     } catch (error) {
       console.error('[Redis] Error closing connection:', error);
     }

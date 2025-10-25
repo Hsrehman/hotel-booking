@@ -17,10 +17,8 @@ export async function GET(request: NextRequest) {
     // 1. Search local PostgreSQL database first
     const localResults = await dbService.searchDestinations(searchTerm, 5);
     
-    // Increment search count for found destinations
-    for (const destination of localResults) {
-      await dbService.incrementDestinationSearchCount(destination.destinationId);
-    }
+    // Note: Analytics tracking moved to separate /api/destinations/analytics endpoint
+    // This prevents incrementing search count for every suggestion shown
 
     // 2. If we have enough results, return them immediately
     if (localResults.length >= 3) {
@@ -91,7 +89,12 @@ export async function GET(request: NextRequest) {
         });
 
         return NextResponse.json({
-          destinations: sortedResults.slice(0, 10),
+          destinations: sortedResults.slice(0, 10).map((dest: any) => ({
+            destinationId: dest.destinationId,
+            cityName: dest.cityName,
+            countryName: dest.countryName,
+            countryCode: dest.countryCode,
+          })),
         });
       }
     } catch (apiError) {
