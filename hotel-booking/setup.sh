@@ -71,3 +71,4 @@ echo "Services running:"
 echo "- PostgreSQL: localhost:5432"
 echo "- Redis: localhost:6379"
 echo "- Next.js: localhost:3000 (after npm run dev)"
+
